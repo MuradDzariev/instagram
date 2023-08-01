@@ -1,0 +1,39 @@
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  li {
+    position: relative;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  border: 1px solid var(--gray_100);
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  li {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 10px;
+    color: var(--gray_900);
+    cursor: pointer;
+    a {
+      color: var(--gray_900);
+    }
+
+    &:hover {
+      background: var(--red_hover);
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
